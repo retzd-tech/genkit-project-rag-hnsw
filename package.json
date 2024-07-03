@@ -1,0 +1,32 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "build:start": "node --env-file=.env lib/index.js",
+    "register:env": "sh set-env.sh",
+    "genkit:start": "npm run register:env && genkit start",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "name": "genkit-intro",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@genkit-ai/ai": "^0.5.3",
+    "@genkit-ai/core": "^0.5.3",
+    "@genkit-ai/dotprompt": "^0.5.3",
+    "@genkit-ai/flow": "^0.5.3",
+    "@genkit-ai/googleai": "^0.5.3",
+    "express": "^4.19.2",
+    "genkitx-hnsw": "0.1.1-rc.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "glob": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
+}
