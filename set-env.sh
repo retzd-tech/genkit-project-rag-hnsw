@@ -18,8 +18,6 @@ while IFS= read -r line || [[ -n "$line" ]]; do
   value=$(echo "$line" | cut -d '=' -f 2-)
 
   # Export the key and value as an environment variable
-  echo $key
-  echo $value
   export $key=$value
 done < .env
 
