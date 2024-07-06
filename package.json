@@ -2,8 +2,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build:start": "node --env-file=.env lib/index.js",
-    "register:env": "sh set-env.sh",
-    "genkit:start": "npm run register:env && genkit start",
+    "start": "sh start.sh",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
